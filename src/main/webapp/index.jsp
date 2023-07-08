@@ -8,6 +8,7 @@
 
 <h2>I have successfully launched my Instance!</h2>
 <h2>From PIPELINE</h2>
+<h2>version 1.01</h2>
 
 <p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
 </strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
