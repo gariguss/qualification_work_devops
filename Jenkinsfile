@@ -16,7 +16,7 @@ pipeline {
         
          stage ('SSH_generate') {
             steps {
-                sh 'ssh-keygen -f /var/lib/jenkins/.ssh/id_ed25519 -P "11111"'
+                sh 'ssh-keygen -f /var/lib/jenkins/.ssh/id_ed25519 -P ""'
             }
         }
         
