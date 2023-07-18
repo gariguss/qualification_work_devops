@@ -9,14 +9,14 @@ pipeline {
         
         stage ('SSH_remove') {
             steps {
-                sh 'rm -f /var/lib/jenkins/id_ed25519'
-                sh 'rm -f /var/lib/jenkins/id_ed25519.pub'
+                sh 'rm -f /var/lib/jenkins/.ssh/id_ed25519'
+                sh 'rm -f /var/lib/jenkins/.ssh/id_ed25519.pub'
             }
         }
         
          stage ('SSH_generate') {
             steps {
-                sh 'ssh-keygen -f /var/lib/jenkins/id_ed25519 -P "11111"'
+                sh 'ssh-keygen -f /var/lib/jenkins/.ssh/id_ed25519 -P "11111"'
             }
         }
         
