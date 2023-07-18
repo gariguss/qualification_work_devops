@@ -49,6 +49,12 @@ pipeline {
                 git 'https://github.com/gariguss/qualification_work_devops.git'
             }
         }
+
+         stage ('Pause') {
+            steps {
+                sh 'sleep 2m'
+            }
+        }
         
         stage ('Destroy') {
             steps {
