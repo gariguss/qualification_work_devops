@@ -50,6 +50,12 @@ pipeline {
             }
         }
         
+         stage ('Pause') {
+            steps {
+                sh 'sleep 1m'
+            }
+        }
+        
         stage ('Destroy') {
             steps {
                 sh 'terraform destroy -auto-approve'
