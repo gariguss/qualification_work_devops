@@ -52,7 +52,7 @@ pipeline {
         
          stage ('Pause') {
             steps {
-                sh 'sleep 1m'
+                sh 'sleep 3m'
             }
         }
         
